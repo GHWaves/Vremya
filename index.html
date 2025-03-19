@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Время</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://i.imgur.com/uQaPRpl.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .blur {
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.5);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .album-cover {
+            max-width: 200px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: rgba(137, 137, 137, 0.8);
+            padding: 8px 12px;
+            border: none;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: rgb(180, 180, 180);
+        }
+
+        .powered-by {
+            margin-top: 20px;
+            font-size: 12px;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .powered-by img {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="blur">
+        <img src="https://i.imgur.com/uQaPRpl.png" alt="Обложка" class="album-cover">
+        <div class="button-container">
+            <a href="https://music.yandex.ru/album/35458448/track/136249042?utm_source=desktop&utm_medium=copy_link" target="_blank" class="button">
+                <img src="https://img.icons8.com/color/48/yandex-music-new.png" alt="Яндекс Музыка" width="24">
+                Яндекс Музыка
+            </a>
+            <a href="https://open.spotify.com/track/3Tr8w8fJFBRp0WEY6iyJBt" target="_blank" class="button">
+                <img src="https://img.icons8.com/fluency/48/spotify.png" alt="Spotify" width="24">
+                Spotify
+            </a>
+            <a href="https://music.apple.com" target="_blank" class="button">
+                <img src="https://img.icons8.com/color/48/apple-music.png" alt="Apple Music" width="24">
+                Apple Music
+            </a>
+            <a href="https://vk.com/music/album/-2000296826_23296826_9eaadc72e1a1679607" target="_blank" class="button">
+                <img src="https://img.icons8.com/color/48/vk-com.png" alt="VK Музыка" width="24">
+                VK Музыка
+            </a>
+        </div>
+        <div class="powered-by">
+            <span>Powered by</span>
+            <img src="https://i.imgur.com/jjhWPR8.png" alt="GHGANG">
+            <span>GHWaves</span>
+        </div>
+    </div>
+</body>
+</html>
